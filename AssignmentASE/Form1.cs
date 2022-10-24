@@ -10,11 +10,36 @@ using System.Windows.Forms;
 
 namespace AssignmentASE
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void textBoxSingleLine_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxMultiLine_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonMultiLine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSingleLine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxMain_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
