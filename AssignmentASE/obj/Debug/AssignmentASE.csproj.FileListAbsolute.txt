@@ -1,0 +1,11 @@
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\obj\Debug\AssignmentASE.csproj.AssemblyReference.cache
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\obj\Debug\AssignmentASE.csproj.SuggestedBindingRedirects.cache
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\obj\Debug\AssignmentASE.MainForm.resources
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\obj\Debug\AssignmentASE.Properties.Resources.resources
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\obj\Debug\AssignmentASE.csproj.GenerateResource.cache
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\obj\Debug\AssignmentASE.csproj.CoreCompileInputs.cache
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\bin\Debug\AssignmentASE.exe.config
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\bin\Debug\AssignmentASE.exe
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\bin\Debug\AssignmentASE.pdb
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\obj\Debug\AssignmentASE.exe
+C:\Users\spiro\source\repos\AssignmentASE\AssignmentASE\obj\Debug\AssignmentASE.pdb

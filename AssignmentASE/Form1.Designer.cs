@@ -46,7 +46,7 @@
             this.textBoxMultiLine.Name = "textBoxMultiLine";
             this.textBoxMultiLine.Size = new System.Drawing.Size(300, 392);
             this.textBoxMultiLine.TabIndex = 0;
-            this.textBoxMultiLine.TextChanged += new System.EventHandler(this.textBoxMultiLine_TextChanged);
+            this.textBoxMultiLine.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxMultiLine_KeyDown);
             // 
             // contextMenuStrip1
             // 
@@ -91,6 +91,7 @@
             this.pictureBoxMain.TabIndex = 5;
             this.pictureBoxMain.TabStop = false;
             this.pictureBoxMain.Click += new System.EventHandler(this.pictureBoxMain_Click);
+            this.pictureBoxMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxMain_Paint);
             // 
             // MainForm
             // 
