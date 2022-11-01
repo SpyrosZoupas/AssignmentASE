@@ -60,7 +60,7 @@
             this.textBoxSingleLine.Name = "textBoxSingleLine";
             this.textBoxSingleLine.Size = new System.Drawing.Size(358, 30);
             this.textBoxSingleLine.TabIndex = 2;
-            this.textBoxSingleLine.TextChanged += new System.EventHandler(this.textBoxSingleLine_TextChanged);
+            this.textBoxSingleLine.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxSingleiLine_KeyDown);
             // 
             // buttonMultiLine
             // 
@@ -90,7 +90,6 @@
             this.pictureBoxMain.Size = new System.Drawing.Size(505, 377);
             this.pictureBoxMain.TabIndex = 5;
             this.pictureBoxMain.TabStop = false;
-            this.pictureBoxMain.Click += new System.EventHandler(this.pictureBoxMain_Click);
             this.pictureBoxMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxMain_Paint);
             // 
             // MainForm

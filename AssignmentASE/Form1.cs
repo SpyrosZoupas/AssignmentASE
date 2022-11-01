@@ -22,29 +22,16 @@ namespace AssignmentASE
 
         }
 
-        private void textBoxSingleLine_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxMultiLine_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonMultiLine_Click(object sender, EventArgs e)
         {
-
+            string commandTyped = textBoxMultiLine.Text;
+            this.paint(commandTyped);
         }
 
         private void buttonSingleLine_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBoxMain_Click(object sender, EventArgs e)
-        {
-          
+            string commandTyped = textBoxSingleLine.Text;
+            this.paint(commandTyped);
         }
 
         private void pictureBoxMain_Paint(object sender, PaintEventArgs e)
@@ -58,10 +45,32 @@ namespace AssignmentASE
             if (e.KeyCode != Keys.Enter)
             {
                 return;
+            } else
+            {
+                string commandTyped = textBoxMultiLine.Text;
+                this.paint(commandTyped);
             }
+
+        }
+
+        private void textBoxSingleiLine_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter)
+            {
+                return;
+            }
+            else
+            {
+                string commandTyped = textBoxSingleLine.Text;
+                this.paint(commandTyped);
+            }
+        }
+
+        private void paint(string text)
+        {
             Console.Write("Enter key pressed...");
 
-            var commandTyped = textBoxMultiLine.Text.Trim().ToLower();
+            var commandTyped = text.Trim().ToLower();
 
             var pen = new Pen(Color.Red);
             var graphics = Graphics.FromImage(OutputBitmap);
@@ -81,5 +90,7 @@ namespace AssignmentASE
             textBoxMultiLine.Clear();
             Refresh();
         }
+
+        
     }
 }
