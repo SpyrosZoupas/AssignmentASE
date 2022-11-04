@@ -8,5 +8,9 @@ namespace AssignmentASE
 {
     internal class Circle : Shape
     {
+        public void drawCircle()
+        {
+
+        }
     }
 }

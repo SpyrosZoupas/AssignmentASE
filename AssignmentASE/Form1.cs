@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,12 +14,12 @@ namespace AssignmentASE
     public partial class MainForm : Form
     {
         readonly Bitmap OutputBitmap;
-        //readonly Canvas Canvas;
+        readonly Canvass Canvass;
         public MainForm()
         {
             InitializeComponent();
-            OutputBitmap = new Bitmap   (505,377);
-            //Canvas = new Canvas(Graphics.FromImage(OutputBitmap));
+            OutputBitmap = new Bitmap(505,377);
+            Canvass = new Canvass(Graphics.FromImage(OutputBitmap));
 
         }
 
@@ -31,6 +32,8 @@ namespace AssignmentASE
         private void buttonSingleLine_Click(object sender, EventArgs e)
         {
             string commandTyped = textBoxSingleLine.Text;
+            Parser.ParseAction(commandTyped);
+
             this.paint(commandTyped);
         }
 
@@ -45,10 +48,10 @@ namespace AssignmentASE
             if (e.KeyCode != Keys.Enter)
             {
                 return;
-            } else
+            } 
+            else
             {
-                string commandTyped = textBoxMultiLine.Text;
-                this.paint(commandTyped);
+                Console.WriteLine("\n");              
             }
 
         }
@@ -62,6 +65,8 @@ namespace AssignmentASE
             else
             {
                 string commandTyped = textBoxSingleLine.Text;
+                Parser.ParseAction(commandTyped);
+                
                 this.paint(commandTyped);
             }
         }
@@ -80,10 +85,14 @@ namespace AssignmentASE
                     graphics.DrawLine(pen, 0, 0, 100, 100);
                     break;
                 case "square":
-                    graphics.DrawRectangle(pen, 0, 100, 100, 100);
+                    graphics.DrawRectangle(pen, 0, 0, 100, 100);
                     break;
                 case "circle":
-                    graphics.DrawEllipse(pen, 0, 100, 100, 100);
+                    graphics.DrawEllipse(pen, 0, 0 , 100, 100);
+                    break;
+                case "line\r\ncircle":
+                    graphics.DrawLine(pen, 0, 0, 100, 100);
+                    graphics.DrawEllipse(pen , 0, 0, 100, 100);
                     break;
             }
 
