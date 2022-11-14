@@ -20,7 +20,7 @@ namespace AssignmentASE
             {
                count++;
             }
-            if (count > 1)
+            if (count == 2) //==2 or > 1 or > 1 & < 2??
             {
                 string command = split[0];
                 string[] parameters = split[1].Split(',');
@@ -28,6 +28,7 @@ namespace AssignmentASE
                 for (int i = 0; i < parameters.Length; i++)
                 {
                     parametersInteger[i] = parseInt(parameters[i]);
+                    //throw exception in case it's not a number?
                 }
 
                 //change to switch for the other stuff.
@@ -39,11 +40,19 @@ namespace AssignmentASE
                             Console.WriteLine("WRONG NUMBER OF PARAMETERS. PARAMETERS NEEDED = 2");
                         } else
                         {
+                                 
                             //we draw
                         }
                         break;
                     case "moveto":
-                        //dsadasdsa
+                        if (parametersInteger.Count() != 2)
+                        {
+                            Console.WriteLine("WRONG NUMBER OF PARAMETERS. PARAMETERS NEEDED = 2");
+                            //maybe a method that is called to check for parameters?
+                        } else
+                        {
+                            //we draw
+                        }
                         break;
                 }
             }
@@ -61,6 +70,7 @@ namespace AssignmentASE
                 return result;
             } else
             {
+                //dont want to return anything
                 return result;
             }
         }

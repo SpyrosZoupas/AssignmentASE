@@ -51,7 +51,8 @@ namespace AssignmentASE
             } 
             else
             {
-                Console.WriteLine("\n");              
+                Console.WriteLine("\n");        
+                //later you split it on \n
             }
 
         }
